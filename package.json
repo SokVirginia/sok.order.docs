@@ -1,10 +1,14 @@
 {
-  "name": "sok-order-docs",
+  "name": "sok-docs",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "dev:order": "vitepress dev projects/sok.order",
+    "dev:home": "vitepress dev home",
+    "build:order": "vitepress build projects/sok.order",
+    "build:home": "vitepress build home",
+    "build:all": "npm run build:home && npm run build:order",
+    "preview:order": "vitepress preview projects/sok.order"
   },
   "devDependencies": {
     "vitepress": "^1.3.4"
